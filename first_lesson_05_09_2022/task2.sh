@@ -3,6 +3,27 @@ while [[ "$flag" == "t" ]]
 do 
     echo enter two numbers
     read n1 n2
+
+    if [[ "$n1" -eq "0" ]] || [[ "$n2" -eq "0" ]]
+    then flag=f
+    echo "пиши нормально и думай"
+    break
+    fi
+
+
+    re='^[0-9]+$'
+    if ! [[ "$n1" =~ $re ]] ; 
+    then flag=f
+    echo "пиши нормально и думай"
+    break
+    fi
+
+    if ! [[ "$n2" =~ $re ]] ; 
+    then flag=f
+    echo "пиши нормально и думай"
+    break
+    fi
+
     if [[ -n "$n1" ]] && [[ -n "$n2" ]] 
     then 
         remainder=1
