@@ -1,11 +1,7 @@
 echo "arguments are: $1 and $2"
 
 read -p "need number  " number
-re='^[0-9]+$'
-if  ! [[ "$n1" =~ $re ]] ; 
-then error=2
-    echo "u should to try again"
-else
+
 case $number in
     0) echo "no students" ;;
     1) echo "1 student" ;;
@@ -14,4 +10,3 @@ case $number in
     4) echo "4 students" ;;
     *) echo "a lot of students" ;;
     esac
-fi
