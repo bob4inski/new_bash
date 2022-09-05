@@ -12,6 +12,8 @@
 33 students
 44 students
 5 и большеA lot of students
+![image](https://user-images.githubusercontent.com/89968748/188408926-f491c718-37fd-4dbd-b221-dca38606ef9f.png)
+
 
 
 ## Task1
